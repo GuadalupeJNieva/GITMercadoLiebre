@@ -1,0 +1,187 @@
+
+:root{
+--amarillo: #EAC926;
+--azul: #03264C;
+--celeste: #1259c3;
+--gris-oscuro: #666;
+--gris-claro: #ebebeb;
+--verde: #39b54a;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+main{
+    width: 90vw;
+    margin: auto;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--gris-claro);
+}
+.productos{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+header{
+    background-color: var(--amarillo);
+}
+.logo{
+    width: 50%;
+    padding: 10px;
+}
+.buscador{
+    padding: 5px;
+    color: var(--gris-oscuro);
+    width: 50%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.input{
+    background-color: #fff;
+    border: 1px solid #000;
+    color: var(--gris-oscuro);
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    width: 100%;
+}
+.icono-buscador{
+    background-color: #fff;
+    border-left: 1px solid #000;
+    color: var(--gris-oscuro);
+    padding: 5px;
+    position: absolute;
+    right: 10px;
+    padding: 3px;
+
+}
+.textoFormaDePago{
+    text-align: center;
+}
+header ul li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: #000;
+    display: none;
+}
+.headerInferior img{
+    width: 100%;
+}
+    h3.titulares{
+    font-size: 24px;
+}
+p.precios{
+    font-size: 18px;
+    width: 30%;
+    text-align: left;
+}
+
+p.descuentos{
+    font-size: 16px;
+    color: var(--verde);
+    width: 70%;
+    text-align: right;
+}
+h4.descripciones{
+    font-size: 16px;
+    display: none;
+}
+.burger-menu{
+    text-align: center;
+}
+.burger-menu i{
+    background-color: var(--celeste);
+    color:#fff;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0 20px 0;
+}
+.footer{
+text-align: center;
+margin-top: 20px;
+margin-bottom: 20px;
+}
+.iconoFooter{
+color: var(--azul);
+background-color: #fff;
+font-size: 2em;
+padding: 10px;
+}
+.copyright{
+    text-align:left;
+}
+article img{
+    width: 100%;
+}
+article{
+    margin-bottom: 10px;
+    background-color: #fff;
+    width:70%;
+}
+.infoProducto{
+    border-top: 1px solid var(--gris-claro);
+    width: 100%;
+    padding: 15px;
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    align-items: center;
+}
+.infoProducto i{
+    font-size:1.2em;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 25px;
+    top: -15px;
+    color: var(--verde);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.headerSuperior{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (min-width: 361px){
+    h4.descripciones{
+        display: block;
+    }
+    a{
+        display: block;
+    }
+    .burger-menu i{
+        display: none;
+    }
+    article{
+        width: 40%;
+    }
+    .productos{
+        justify-content: space-around;
+    }
+}
+@media (min-width: 769px){
+    article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width: 20%;
+    }
+    .productos{
+        justify-content: space-between;
+    }
+
+}
+
