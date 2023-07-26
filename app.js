@@ -3,7 +3,7 @@ const app =express();
 const path =require("path");
 app.use(express.static("public"));
 
-app.listen(3000,()=>{
+app.listen(process.env.PORT || 3000, function() {
     console.log("servidor corriendo")
 })
 
