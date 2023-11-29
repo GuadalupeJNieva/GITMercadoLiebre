@@ -7,6 +7,11 @@
 --gris-claro: #ebebeb;
 --verde: #39b54a;
 }
+
+@import 'register.css';
+@import 'login.css';
+@import 'compras.css';
+
 *{
     margin: 0px;
     padding: 0px;
@@ -27,6 +32,7 @@ body{
 }
 header{
     background-color: var(--amarillo);
+    
 }
 .logo{
     width: 50%;
@@ -61,14 +67,21 @@ header{
 }
 .textoFormaDePago{
     text-align: center;
+    margin-left: 2%;
 }
 header ul li{
     list-style-type: none;
+}
+.accesoAFormularios{
+    text-align: end;
+    margin-right: 5%;
+    margin-bottom: 2% ;
 }
 a{
     text-decoration: none;
     color: #000;
     display: none;
+    margin-left: 5%;
 }
 .headerInferior img{
     width: 100%;
@@ -107,6 +120,8 @@ h4.descripciones{
 text-align: center;
 margin-top: 20px;
 margin-bottom: 20px;
+align-items: center;
+margin-left: 40%;
 }
 .iconoFooter{
 color: var(--azul);
@@ -125,6 +140,19 @@ article{
     background-color: #fff;
     width:70%;
 }
+
+article:hover .descripciones{
+    display: block;
+}
+
+article:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100,100);
+}
+
+article:hover .fa-truck{
+    transform: rotate(-90deg);
+}
+
 .infoProducto{
     border-top: 1px solid var(--gris-claro);
     width: 100%;
@@ -151,6 +179,7 @@ article{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 2s;
 }
 .headerSuperior{
     display: flex;
@@ -158,9 +187,7 @@ article{
 }
 
 @media (min-width: 361px){
-    h4.descripciones{
-        display: block;
-    }
+    
     a{
         display: block;
     }
@@ -176,7 +203,6 @@ article{
 }
 @media (min-width: 769px){
     article{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
         width: 20%;
     }
     .productos{
