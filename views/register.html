@@ -19,36 +19,23 @@
                 <input type="text" class="input" placeholder="Buscar productos y marcas">
             <div class="icono-buscador"><i class="fa fa-search"></i></div>
             </div>
-        <p class="textoFormaDePago"><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</p>
+        <p  class="textoFormaDePago"><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</p>
         </div>
         <nav>
             <br>
-            <ul>
-                <li>
-                    <a href="/">Ofertas</a>
-                </li>
-                <li>
-                    <a href="/">Tienda oficiales</a>
-                </li>
-                <li>
-                    <a href="/">Vender</a>
-                </li>
-                <li>
-                    <a href="/">Ayuda</a>
-                </li>
+            <div>
+            <ul class="subtitulosHeader">
+                <a href="/">Ofertas</a>
+                <a href="/">Tienda oficiales</a> 
+                <a href="/">Vender</a>
+                <a href="/">Ayuda</a>
+                <a href="/register">Creá tu cuenta <i class="far fa-id-card"></i></a>
+                <a href="/login">Ingresa <i class="fas fa-sign-in-alt"></i></a>
+                <a href="/compras">Mis compras <i class="fas fa-shopping-basket"></i></a> 
             </ul>
-            <ul class="accesoAFormularios">
-                <li >
-                    <a href="/register">Creá tu cuenta <i class="far fa-id-card"></i></a>
-                </li>
-                <li>
-                    <a href="/login">Ingresa <i class="fas fa-sign-in-alt"></i></a>
-                </li>
-                <li>
-                    <a href="/compras">Mis compras <i class="fas fa-shopping-basket"></i></a>
-                </li>
-            </ul>
+        </div>
         </nav>
+        <br>
         <div class="burger-menu">
             <i class="fas fa-bars"></i>
             </div>            
@@ -57,54 +44,60 @@
     <main>
         <br>
         <div class="tituloRegister">
-            <h4>Completa el formulario con tus datos!</h4>
+            <h4>Completá el formulario con tus datos!</h4>
         <br>
 
-        <form action="/" method="get">
+        <form class='registerForm'action="/" method="get">
                 <div>
                     <label for="nombre"></label>
-                    <input type="text" id="nombre" name="nombre" placeholder="Nombre y apellido">
+                    <input class="inputsRegister" type="text" id="nombre" name="nombre" placeholder="Nombre y apellido">
                 </div>
+                <br>
                 <div>
                     <label for="nombreUsuario"></label>
-                    <input type="text" id="nombreUsuario" name="nombreUsuario" placeholder="Nombre de Usuario">
+                    <input class="inputsRegister" type="text" id="nombreUsuario" name="nombreUsuario" placeholder="Nombre de Usuario">
                 </div>
-                <div>
-                    <label for="fechaNacimiento"></label>
-                    <input type="date" id="fechaNacimiento" name="fechaNacimiento" >
-                </div>    
+                <br>   
                 <div>
                     <label for="domicilio"></label>
-                    <input type="text" id="domicilio" name="domicilio" placeholder="Domicilio">                
+                    <input class="inputsRegister" type="text" id="domicilio" name="domicilio" placeholder="Domicilio">                
                 </div>
+                <br>
+                <div>
+                    <h5>Fecha de nacimiento</h5>
+                    <br>
+                    <label for="fechaNacimiento"></label>
+                    <input class="inputsRegister" type="date" id="fechaNacimiento" name="fechaNacimiento" >
+                </div> 
+                <br>   
                 <div>
                     <label for="email"></label>
-                    <input type="email" id="email" name="email" placeholder="Email">
+                    <input class="inputsRegister" type="email" id="email" name="email" placeholder="Email">
                 </div>
+                <br>   
                 <div>
                     <label for="password"></label>
-                    <input type="password" name="password" id="password" placeholder="Creá tu contraseña">
+                    <input class="inputsRegister" type="password" name="password" id="password" placeholder="Creá tu contraseña">
                 </div>
+                <br>   
                 <div>
                     <label for="passwordCheck"></label>
-                    <input type="password" name="passwordCheck" id="passwordCheck" placeholder="Ingresá tu contraseña nuevamente">
+                    <input class="inputsRegister" type="password" name="passwordCheck" id="passwordCheck" placeholder="Ingresá tu contraseña nuevamente">
                 </div>
+                <br>   
             </div>
 
             <div class="pefilRegister">
-                <h5>¿Querés comprar o vender?</h5>
-                <div>
-                    <label for="comprador">Comprador</label>
-                    <input type="radio" id="comprar" name="Perfil" value="comprador">
-                </div>
-                <div>
-                    <label for="vendedor">Vendedor</label>
-                    <input type="radio" id="vender" name="Perfil" value="vendedor">
-                </div>
+                <h4>¿Querés comprar o vender?</h4>
+                <br>
+                <label for="comprador">Comprador</label>
+                <input type="radio" id="comprar" name="Perfil" value="comprador">
+                <label for="vendedor">Vendedor</label>
+                <input type="radio" id="vender" name="Perfil" value="vendedor">
             </div>
-
+            <br>
             <div class="interesRegister">
-                <h5>¿Cuáles son tus interéses?</h5>
+                <h4>¿Cuáles son tus interéses?</h4>
                 <div>
                     <label for="electro">Electro</label>
                     <input type="checkbox" name="interes" id="electro" value="electro">  
@@ -126,19 +119,20 @@
                     <input type="checkbox" name="interes" id="sano" value="sano">
                 </div>                
             </div>
-
+            <br>
             <div class="fotoRegister">
-                <h5>Elegí tu foto de usuario</h5>
+                <h4>Elegí tu foto de usuario</h4>
+                <br>
                 <input type="file" name="fotoRegister"  id="fotoRegister" >
             </div>
             <br>
 
-            <div class="botonEnviarRegister">
-                <button type="submit" >Enviar</button>
+            <div>
+                <button class="botonEnviarRegister" type="submit" >Enviar</button>
             </div>
             <br>
-            <div class="botonBorrarRegister">
-                <button type="reset">Borrar</button>
+            <div>
+                <button class="botonBorrarRegister" type="reset">Borrar</button>
             </div>
 
 
@@ -164,9 +158,11 @@
                 <h4>Seguridad de principio a fin</h4>
                 <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,porque estás siempre protegid@.</p>
             </article>
-            <article class="copyright"></article>
-            <p>Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
         </section>
+
+        <article class="copyright">
+            <p>Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+        </article>
     </footer>
 </body>
 </html>

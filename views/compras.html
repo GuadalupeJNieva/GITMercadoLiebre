@@ -19,36 +19,23 @@
                 <input type="text" class="input" placeholder="Buscar productos y marcas">
             <div class="icono-buscador"><i class="fa fa-search"></i></div>
             </div>
-        <p class="textoFormaDePago"><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</p>
+        <p  class="textoFormaDePago"><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</p>
         </div>
         <nav>
             <br>
-            <ul>
-                <li>
-                    <a href="/">Ofertas</a>
-                </li>
-                <li>
-                    <a href="/">Tienda oficiales</a>
-                </li>
-                <li>
-                    <a href="/">Vender</a>
-                </li>
-                <li>
-                    <a href="/">Ayuda</a>
-                </li>
+            <div>
+            <ul class="subtitulosHeader">
+                <a href="/">Ofertas</a>
+                <a href="/">Tienda oficiales</a> 
+                <a href="/">Vender</a>
+                <a href="/">Ayuda</a>
+                <a href="/register">Creá tu cuenta <i class="far fa-id-card"></i></a>
+                <a href="/login">Ingresa <i class="fas fa-sign-in-alt"></i></a>
+                <a href="/compras">Mis compras <i class="fas fa-shopping-basket"></i></a> 
             </ul>
-            <ul class="accesoAFormularios">
-                <li >
-                    <a href="/register">Creá tu cuenta <i class="far fa-id-card"></i></a>
-                </li>
-                <li>
-                    <a href="/login">Ingresa <i class="fas fa-sign-in-alt"></i></a>
-                </li>
-                <li>
-                    <a href="/compras">Mis compras <i class="fas fa-shopping-basket"></i></a>
-                </li>
-            </ul>
+        </div>
         </nav>
+        <br>
         <div class="burger-menu">
             <i class="fas fa-bars"></i>
             </div>            
@@ -56,10 +43,19 @@
     </header>
 
     <main>
-        <div>Realiza tus compras!</div>
+        <br>
+        <form action="/" method="get">
+            <h2 class="tituloComenzarCompras">Hace click en el botón de aca abajo para ir al inicio y comenzar a llenar el carrito de compras!</h2>
+            <div>
+                <button class='botonRegresarInicio' type="submit" href="/"> ¡Quiero comenzar a comprar! </button>
+            </div>
+        </form>
+            <br>
     </main>
 
+
     <footer>
+        <br>
         <section>
             <article class="footer">
                 <div class="iconoFooter"><i class="fas fa-credit-card"></i></div>
@@ -76,9 +72,11 @@
                 <h4>Seguridad de principio a fin</h4>
                 <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,porque estás siempre protegid@.</p>
             </article>
-            <article class="copyright"></article>
-            <p>Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
         </section>
+
+        <article class="copyright">
+            <p>Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+        </article>
     </footer>
 </body>
 </html>
